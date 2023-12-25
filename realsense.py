@@ -6,7 +6,7 @@ import time
 import os
 
 # Tạo thư mục để lưu ảnh
-output_folder = "/home/dotronghiep/Documents/Research/Peanuts_Anomaly_Detection_PAD/realsense-fps-and-video"
+output_folder = "/home/dotronghiep/Documents/Research/Peanuts_Anomaly_Detection_PAD"
 os.makedirs(output_folder, exist_ok=True)
 
 # Khởi tạo pipeline và cấu hình
