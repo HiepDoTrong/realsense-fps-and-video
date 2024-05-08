@@ -47,14 +47,14 @@ try:
         current_time = time.time()
         elapsed_time = current_time - start_time
 
-        if elapsed_time >= 1:
-            # Lưu ảnh chiều sâu dưới định dạng TIFF
-            depth_filename = os.path.join(output_folder, "depth_images", f"depth_{int(current_time)}.tiff")
-            depth_image_pil = Image.fromarray(depth_image)
-            depth_image_pil.save(depth_filename, format="TIFF")
+        # if elapsed_time >= 1:
+        #     # Lưu ảnh chiều sâu dưới định dạng TIFF
+        #     depth_filename = os.path.join(output_folder, "depth_images", f"depth_{int(current_time)}.tiff")
+        #     depth_image_pil = Image.fromarray(depth_image)
+        #     depth_image_pil.save(depth_filename, format="TIFF")
 
-            # Reset thời gian bắt đầu
-            start_time = time.time()
+        #     # Reset thời gian bắt đầu
+        #     start_time = time.time()
 
         # Nếu người dùng nhấn phím ESC, thoát vòng lặp
         if cv2.waitKey(1) == 27:
